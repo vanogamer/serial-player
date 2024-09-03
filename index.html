@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>serial player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <div class="player-container">
+        <div class="video-wrapper">
+            <video id="videoPlayer" width="640" height="360" controls>
+                <source src="1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div id="playlistOverlay" class="playlist-overlay">
+                <h3>Series Playlist</h3>
+                <div class="season" id="season1">
+                    <h4>Season 1</h4>
+                    <ul>
+                        <li data-src="1.mp4">1</li>
+                        <li data-src="2.mp4">2</li>
+                        <li data-src="3.mp4">3</li>
+                        <li data-src="4.mp4">4</li>
+                        <li data-src="5.mp4">5</li>
+                        <li data-src="6.mp4">6</li>
+                        <li data-src="7.mp4">7</li>
+                        <li data-src="8.mp4">8</li>
+                        <li data-src="9.mp4">9</li>
+                        <li data-src=".mp4">10</li>
+                        <li data-src="11.mp4">11</li>
+                        <li data-src="12.mp4">12</li>
+                    </ul>
+                </div>
+                <div class="season" id="season2">
+                    <h4>Season 2</h4>
+                    <ul>
+                        <li data-src="1.mp4">1</li>
+                        <li data-src="2.mp4">2</li>
+                        <li data-src="3.mp4">3</li>
+                        <li data-src="4.mp4">4</li>
+                        <li data-src="5.mp4">5</li>
+                        <li data-src="6.mp4">6</li>
+                        <li data-src="7.mp4">7</li>
+                        <li data-src="8.mp4">8</li>
+                        <li data-src="9.mp4">9</li>
+                        <li data-src="1o.mp4">10</li>
+                        <li data-src="11.mp4">11</li>
+                        <li data-src="12.mp4">12</li>
+                    </ul>
+                </div>
+                <div class="season" id="season3">
+                    <h4>Season 3</h4>
+                    <ul>
+                        <li data-src="1.mp4">1</li>
+                        <li data-src="2.mp4">2</li>
+                        <li data-src="3.mp4">3</li>
+                        <li data-src="4.mp4">4</li>
+                        <li data-src="5.mp4">5</li>
+                        <li data-src="6.mp4">6</li>
+                        <li data-src="7.mp4">7</li>
+                        <li data-src="8.mp4">8</li>
+                        <li data-src="9.mp4">9</li>
+                        <li data-src="10.mp4">10</li>
+                        <li data-src="11.mp4">11</li>
+                    </ul>
+                </div>
+                <div class="season" id="season4">
+                    <h4>Season 4</h4>
+                    <ul>
+                        <li data-src="1.mp4">1</li>
+                        <li data-src="2.mp4">2</li>
+                        <li data-src="3.mp4">3</li>
+                        <li data-src="4.mp4">4</li>
+                        <li data-src="5.mp4">5</li>
+                        <li data-src="6.mp4">6</li>
+                        <li data-src="7.mp4">7</li>
+                        <li data-src="8.mp4">8</li>
+                        <li data-src="9.mp4">9</li>
+                        <li data-src="10.mp4">10</li>
+                        <li data-src="11.mp4">11</li>
+                        <li data-src="12.mp4">12</li>
+                    </ul>
+                </div>
+                <div class="season" id="season5">
+                    <h4>Season 5</h4>
+                    <ul>
+                        <li data-src="1.mp4">1</li>
+                        <li data-src="2.mp4">2</li>
+                        <li data-src="3.mp4">3</li>
+                        <li data-src="4.mp4">4</li>
+                        <li data-src="5.mp4">5</li>
+                        <li data-src="6.mp4">6</li>
+                        <li data-src="7.mp4">7</li>
+                        <li data-src="8.mp4">8</li>
+                        <li data-src="9.mp4">9</li>
+                    </ul>
+                </div>
+            </div>
+            <button id="togglePlaylist" class="toggle-playlist-btn">Show Playlist</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

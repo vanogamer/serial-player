@@ -1,0 +1,183 @@
+/* Default styles (for laptops and larger screens) */
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background-color: #3b2f2f;
+    color: #e6d6c6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* General container styling */
+.player-container {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid #5e3a3a;
+}
+
+/* Video player wrapper */
+.video-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+    background-color: #2d1b1b;
+    height: 0;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Playlist overlay */
+.playlist-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 220px;
+    background: rgba(43, 28, 28, 0.85);
+    color: #e6d6c6;
+    padding: 20px;
+    display: none;
+    overflow-y: auto;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+    background-image: radial-gradient(circle, grey, grey);
+}
+
+/* Playlist title */
+.playlist-overlay h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 3px dashed white;
+    padding-bottom: 5px;
+    color: black;
+}
+
+/* Season title */
+.season h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #8b5e5e;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* List of episodes */
+.playlist-overlay ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.playlist-overlay li {
+    background-color: #5e3a3a;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+.playlist-overlay li:hover {
+    background-color: #8b5e5e;
+}
+
+/* Toggle playlist button */
+.toggle-playlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #3b2f2f;
+    color: #8b5e5e;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.toggle-playlist-btn:hover {
+    background-color: #5e3a3a;
+}
+
+/* Responsive design for phone */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    .player-container {
+        max-width: 100%;
+        border-radius: 10px;
+        border-width: 3px;
+    }
+
+    .playlist-overlay {
+        width: 180px;
+        padding: 15px;
+    }
+
+    .toggle-playlist-btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .playlist-overlay h3 {
+        font-size: 18px;
+    }
+
+    .season h4 {
+        font-size: 16px;
+    }
+
+    .playlist-overlay li {
+        padding: 8px;
+    }
+}
+
+/* Responsive design for Xbox */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .player-container {
+        max-width: 90%;
+        border-radius: 15px;
+        border-width: 4px;
+    }
+
+    .playlist-overlay {
+        width: 200px;
+        padding: 18px;
+    }
+
+    .toggle-playlist-btn {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .playlist-overlay h3 {
+        font-size: 19px;
+    }
+
+    .season h4 {
+        font-size: 17px;
+    }
+
+    .playlist-overlay li {
+        padding: 9px;
+    }
+}
